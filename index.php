@@ -36,9 +36,9 @@
      
      <div id="login"><!--start login--> 
      <br/><br/><br/><br/><form action="" method="get">
-              <span class="login_text"> </span><input type="text" class="login_field" value="Nome ............" name="username" size="25" />
-              <span class="login_text"> </span><input type="text" class="login_field" value="............Senha" name="password" size="25" />
-          </form><!--Fim do login-->
+                             <span class="login_text"> </span><input type="text" class="login_field" value="Nome ............" name="username" size="25" />
+                             <span class="login_text"> </span><input type="text" class="login_field" value="............Senha" name="password" size="25" />
+                       </form><!--Fim do login-->
           <a><center><button > Submeter </button></a></center>
      </div>
      
@@ -192,3 +192,10 @@
   
 </body>
 </html>
+<?php
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+?>
