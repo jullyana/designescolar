@@ -1,0 +1,308 @@
+/* 
+    Document   : css
+    Created on : 30/07/2013, 20:31:50
+    Author     : 20112144110384
+    Description:
+        Purpose of the stylesheet follows.
+*/
+/*DESIGN Escolar Juliana*/
+
+
+/*CSS RESET*/
+html, body, div, span, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+img, ins, kbd, q, s, samp,
+small, strike, strong, 
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+	
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*CSS RESET END*/
+
+body {
+  background: #fff url("images/bck_top.jpg") repeat-x top;
+  font-family: Georgia,Verdana, Arial,"Helvetica";
+  font-size: 12px;
+  color: #333;
+}
+
+h1,h2 {
+	color: #333;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 24px;
+	line-height: 34px;
+}
+
+h2 {
+	font-size: 18px;
+	line-height: 34px;
+}
+
+h3 {
+	color: #666;
+	font-size: 18px;
+	line-height: 34px;
+}
+
+a:link {
+	color: #a20303;
+	text-decoration: underline;
+}
+a:visited {
+	text-decoration: underline;
+	color: #ac4545;
+}
+a:hover {
+	text-decoration: underline;
+	color: #ff0000;
+}
+a:active {
+	text-decoration: none;
+	color: #309DCF;
+}
+
+#main_container {
+	margin: auto;
+	width: 950px;
+}
+
+/*HEADER*/
+#header {
+  margin: auto;
+  width: 800px;
+}
+  
+#logo {
+  margin-top: 50px;
+  float: left;
+}
+  
+#side_head {
+  float: right;
+  margin-top: 21px;
+}
+/*HEADER END*/
+
+/*DOWN HEAD*/
+#down_head {
+  background: url(images/down_head.jpg) no-repeat;
+  float: right;
+  margin-top: 1px;
+  width: 670px;
+  height: 272px;
+}
+
+#down_head_right {
+float: right;
+border: 1px solid #000;
+}
+
+#menu {
+  float: right;
+  margin: 10px 25px 0 0;
+}
+
+#menu ul li {
+  float: left;
+  display: inline;
+  margin-left: 30px; 
+}
+
+.sprites {
+  background: url(images/home.jpg) no-repeat -67px 0px;
+  display:block;
+  width: 67px;
+  height: 43px; 
+}
+
+.sprites:hover {
+  background-position: 0px 0;
+}
+
+.sprites1 {
+  background: url(images/page.jpg) no-repeat -67px 0px;
+  display:block;
+  width: 67px;
+  height: 43px; 
+}
+
+.sprites1:hover {
+  background-position: 0px 0px;
+}
+
+#adv {
+  position:relative;
+  top: 63px;
+  right: 18px;
+  float: right;
+}
+
+#login {
+  position: relative;
+  top: 100px;
+  left: 20px;
+  float: left;
+  width: 250px;
+}
+
+.login_text {
+  font-size: 18px;
+}
+
+.login_field {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #666;
+  width: 210px;
+}
+/*DOWN HEAD END*/
+
+/*SIDEBAR*/
+#sidebar {
+  float: left;
+  margin-top: 10px;
+}
+
+#sidebar_top {
+  width: 268px;
+  height: 16px;
+  background: url(images/sidebar_top.png) no-repeat;
+}
+
+#sidebar_middle {
+  width: 268px;
+  background: url(images/sidebar_middle.png) repeat-y;
+  padding-left: 10px;
+}
+
+#sidebar_bottom {
+  width: 268px;
+  height: 23px;
+  background: url(images/sidebar_bottom.png) no-repeat;
+}
+
+#sidebar_middle h1 {
+  color: #a20303;
+  font-size: 20px;
+  line-height: 26px;
+  margin: 0 15px 3px 0;
+  padding-left: 5px;
+}
+
+#sidebar_middle ul {
+  padding-bottom: 25px;
+}
+
+#sidebar_middle ul li {
+  font-size: 14px;
+  font-style: italic;
+  line-height: 18px;
+  padding: 5px 0 2px 15px;
+  border-bottom: 1px solid #ccc;
+  margin: 0 45px 0 20px;
+}
+
+#sidebar_middle ul li a {
+  color: #666;
+  text-decoration: none;
+}
+
+#sidebar_middle ul li a:hover {
+  color: #a20303;
+  text-decoration: none;
+}
+/*SIDEBAR END*/
+
+/*CONTAINER*/
+#container {
+  float: left;
+  width: 650px;
+  min-height: 400px;
+  background: url(images/bck_cont.jpg) no-repeat center top;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.post {
+  padding-bottom: 15px;
+  background: url(images/news_sep.png) no-repeat center bottom;
+} 
+
+h1.top_title {
+  color: #a20303;
+  line-height: 28px;
+  margin: 0 15px 10px 0;
+}
+
+h1.news_title {
+  padding-left: 20px;
+  font-weight: normal;
+}
+
+#container p {
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 20px;
+  margin: 10px 0 30px 0;
+}
+
+.read_more {
+  float: right;
+  margin-top: 10px;  
+}
+/*END CONTAINER*/
+
+/*FOOTER*/
+#footer {
+  clear: both;
+  height: 136px;
+  background: url(images/bck_bot.jpg) repeat-x bottom;
+  color: #ccc;
+  font-size: 10px;
+  line-height: 14px;
+  font-family: Verdana, Georgia, Arial;
+
+}
+
+#footercont {
+  text-align: center;
+  padding-top: 85px;
+}
+
+#footer a {
+  color: #ccc;
+  text-decoration: underline;
+  font-weight: bold;
+}
+/*END FOOTER*/
