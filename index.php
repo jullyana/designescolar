@@ -5,7 +5,7 @@
 
     <title>Design Escolar</title>
 
-      <link href="style.css" rel="stylesheet" type="text/css" /> <!--[if IE 7]>
+      <link href="style_css/css.css" rel="stylesheet" type="text/css" /> <!--[if IE 7]>
       <link href="iefix/ie7.css" rel="stylesheet" type="text/css" /> <![endif]-->
       
   </head>
@@ -14,21 +14,24 @@
   <div id="main_container"><!--Projeto final-->
 
   <div id="header"><!--Início do cabeçalho-->
+      
     <div id="logo">
-    <a href="#"><img src="images/logo.png" alt="Logo" /></a>
+    <a href="#"><img src="imagens/logo.png" alt="Logo" /></a>
     </div>
+      
     <div id="side_head">
-    <a href="#"><img src="images/head_side.png" alt="Logo" /></a>
+    <a href="www.ifrn.com"><img src="imagens/head_side.png" alt="Logo" /></a>
     </div>
+      
   </div><!--Cabeçalho  final -->
   
   <div id="down_head"><!--start down head-->
   
     <div id="menu"><!--Início do menu-->
        <ul>
-         <li><a href="index.html" class="sprites"></a></li>
-         <li><a href="Continue lendo.html" class="sprites1"></a></li>
-         <li><a href="Formulario.html" class="sprites1"></a></li>
+         <li><a href="index.php" class="sprites"></a></li>
+         <li><a href="Continuelendo.php" class="sprites1"></a></li>
+         <li><a href="Formulario.php" class="sprites1"></a></li>
          <li><a href="#" class="sprites1"></a></li>
        </ul>
      </div><!--end menu-->
@@ -139,13 +142,13 @@
         
       <h1>Serviços </h1>
         <ul>
-          <li><a href="Formulario.html">Cadastre-se Aqui</a></li>
-          <li><a href="#">Professores</a></li>
+          <li><a href="formulario_aluno.php">Cadastre-se Aqui</a></li>
+          <li><a href="formulario_professor.php">Professores</a></li>
           <li><a href="#">Revalidar senha</a></li>  
           <li><a href="#"><a href="https://academico.ifrn.edu.br">Q-Academico IFRN</a></li>      
         </ul>
         
-      <a href="#" title="Materiale Didattico"><img src="images/download.png" alt="Materiale Didattico" /></a>
+      <a href="#" title="Material didaticoo"><img src="imagens/download.png" alt="Materiale Didattico" /></a>
     </div>
     
     <div id="sidebar_bottom">
@@ -177,7 +180,7 @@
  <p>Não há nada particularmente errado com essas estratégias, mas devemos assumir que elas não são  completas. O cérebro humano não é um computador, então você não pode memorizar uma soma infinita de conhecimento sem alguma estrutura. Também temos que assumir que fórmulas não irão funcionar se as questões que elas foram feitas para responder forem alteradas.</p>
 
  
-        <br /><span class="read_more"><a href="Continue lendo.html">continuar lendo...</a></span></p>
+        <br /><span class="read_more"><a href="Continuelendo.php">continuar lendo...</a></span></p>
       </div>
   
   </div><!--end container-->
@@ -192,10 +195,3 @@
   
 </body>
 </html>
-<?php
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-?>

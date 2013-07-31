@@ -48,7 +48,7 @@ table {
 /*CSS RESET END*/
 
 body {
-  background: #fff url("images/bck_top.jpg") repeat-x top;
+  background: #fff url("../imagens/bck_top.jpg") repeat-x top;
   font-family: Georgia,Verdana, Arial,"Helvetica";
   font-size: 12px;
   color: #333;
@@ -116,7 +116,7 @@ a:active {
 
 /*DOWN HEAD*/
 #down_head {
-  background: url(images/down_head.jpg) no-repeat;
+  background: url(../imagens/down_head.jpg) no-repeat;
   float: right;
   margin-top: 1px;
   width: 670px;
@@ -140,7 +140,7 @@ border: 1px solid #000;
 }
 
 .sprites {
-  background: url(images/home.jpg) no-repeat -67px 0px;
+  background: url(../imagens/home.jpg) no-repeat -67px 0px;
   display:block;
   width: 67px;
   height: 43px; 
@@ -151,7 +151,7 @@ border: 1px solid #000;
 }
 
 .sprites1 {
-  background: url(images/page.jpg) no-repeat -67px 0px;
+  background: url(../imagens/page.jpg) no-repeat -67px 0px;
   display:block;
   width: 67px;
   height: 43px; 
@@ -197,19 +197,19 @@ border: 1px solid #000;
 #sidebar_top {
   width: 268px;
   height: 16px;
-  background: url(images/sidebar_top.png) no-repeat;
+  background: url(../imagens/sidebar_top.png) no-repeat;
 }
 
 #sidebar_middle {
   width: 268px;
-  background: url(images/sidebar_middle.png) repeat-y;
+  background: url(../imagens/sidebar_middle.png) repeat-y;
   padding-left: 10px;
 }
 
 #sidebar_bottom {
   width: 268px;
   height: 23px;
-  background: url(images/sidebar_bottom.png) no-repeat;
+  background: url(../imagens/sidebar_bottom.png) no-repeat;
 }
 
 #sidebar_middle h1 {
@@ -249,14 +249,14 @@ border: 1px solid #000;
   float: left;
   width: 650px;
   min-height: 400px;
-  background: url(images/bck_cont.jpg) no-repeat center top;
+  background: url(../imagens/bck_cont.jpg) no-repeat center top;
   padding-top: 15px;
   padding-left: 15px;
 }
 
 .post {
   padding-bottom: 15px;
-  background: url(images/news_sep.png) no-repeat center bottom;
+  background: url(../imagens/news_sep.png) no-repeat center bottom;
 } 
 
 h1.top_title {
@@ -287,7 +287,7 @@ h1.news_title {
 #footer {
   clear: both;
   height: 136px;
-  background: url(images/bck_bot.jpg) repeat-x bottom;
+  background: url(../imagens/bck_bot.jpg) repeat-x bottom;
   color: #ccc;
   font-size: 10px;
   line-height: 14px;

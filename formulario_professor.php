@@ -5,7 +5,7 @@
 
     <title>Design Escolar</title>
 
-      <link href="style.css" rel="stylesheet" type="text/css" /> <!--[if IE 7]>
+      <link href="style_css/css.css" rel="stylesheet" type="text/css" /> <!--[if IE 7]>
       <link href="iefix/ie7.css" rel="stylesheet" type="text/css" /> <![endif]-->
       
   </head>
@@ -15,16 +15,16 @@
 
   <div id="header"><!--Início do cabeçalho-->
     <div id="logo">
-    <a href="#"><img src="images/logo.png" alt="Logo" /></a>
+    <a href="#"><img src="imagens/logo.png" alt="Logo" /></a>
     </div>
     <div id="side_head">
-    <a href="#"><img src="images/head_side.png" alt="Logo" /></a>
+    <a href="#"><img src="imagens/head_side.png" alt="Logo" /></a>
     </div>
   </div><!-- final Cabeçalho-->
   
   
       <div id="professor"><!--start down head-->
-      <img src="images/professor.jpg" alt="" />
+      <img src="imagens/professor.jpg" alt="" />
 	
 	
     <div id="menu"><!--Início do menu-->
@@ -136,13 +136,13 @@
         
       <h1>Serviços </h1>
         <ul>
-          <li><a href="#">Cadastre-se Aqui</a></li>
-          <li><a href="#">Professores</a></li>
+          <li><a href="Formulario_aluno.php">Cadastre-se Aqui</a></li>
+          <li><a href="formulario_professor.php">Professores</a></li>
           <li><a href="#">Revalidar senha</a></li>  
           <li><a href="#"><a href="https://academico.ifrn.edu.br">Q-Academico IFRN</a></li>      
         </ul>
         
-      <a href="#" title="Materiale Didattico"><img src="images/download.png" alt="Materiale Didattico" /></a>
+      <a href="#" title="Materiale Didattico"><img src="imagens/download.png" alt="Materiale Didattico" /></a>
     </div>
     
     <div id="sidebar_bottom">
