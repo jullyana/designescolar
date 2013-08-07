@@ -236,12 +236,15 @@ border: 1px solid #000;
 #sidebar_middle ul li a {
   color: #666;
   text-decoration: none;
+  
 }
 
 #sidebar_middle ul li a:hover {
   color: #a20303;
   text-decoration: none;
+  display:block;
 }
+
 /*SIDEBAR END*/
 
 /*CONTAINER*/

@@ -49,7 +49,7 @@
   
   <div id="sidebar"><!--start sidebar-->
     <div id="sidebar_top">
-    </div>
+   </div>
     
     <div id="sidebar_middle">
         <h1>Turmas 2013</h1>

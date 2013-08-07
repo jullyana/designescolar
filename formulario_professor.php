@@ -151,7 +151,8 @@
   
   <div id="container"><!--start container-->
     <h1 class="top_title">Pagina do professor</h1>
-      <div class="post">    
+      <div class="post"> 
+          
       <h1 class="news_title"> Bons estudos geram Bons resultados </h1>
      <div>
 	<b><label class= "b8" for="areap1"> Professor do IFRN </label>  

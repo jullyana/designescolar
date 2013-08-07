@@ -143,7 +143,8 @@
   
   <div id="container"><!--start container-->
     <h1 class="top_title"> Formulario</h1>         
-      <div class="post">    
+      <div class="post">  
+          <form method ="POST" action="validacao.php">
       <h1 class="news_title"> Cadastre-se Aqui </h1>
       
 				<div>
@@ -190,7 +191,7 @@
 					<input class= "c9" type="password" id="Senha"/>
 				</div>
 				<div>
-					<label class= "b11" for="Repetir Password"> Repetir Senha: </label>
+					<label class= "b11" for="Repetir_Password"> Repetir Senha: </label>
 					<input class= "c10" type="Password" id="Repetir senha"/>
 				</div></br>
                                 <div>	Comentarios : </div>	<textarea name="Comentários"></textarea>	</div>
@@ -199,7 +200,7 @@
 				<button >submeter</button></a></center>
        
   
-
+  </form>
   <div id="footer"><!--end footer-->
   <div id="footercont">
    <p>&copy; <b>Site escolar</b> 2013 <br /> <a href="http://www.ifrn.com.br"> Projeto final/Tecnico Sub.Informática 4N</a></p>
