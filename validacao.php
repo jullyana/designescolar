@@ -9,8 +9,8 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <?php
-        if($_GET[ 'act' ]=="gravar") {
+<?php
+        if($_POST[ 'act' ]=="gravar") {
 
 $conn = mysql_connect("localhost","root","");
 
