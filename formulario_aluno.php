@@ -145,10 +145,10 @@
     <h1 class="top_title"> Formulario</h1>         
       <div class="post">  
           <form method ="POST" action="validacao.php">
-      <h1 class="news_title"> Cadastre-se Aqui </h1>
+      <center><h1 class="news_title"> Cadastre-se Aqui </h1></center> 
       
 				<div>
-					<b><label class= "b8" for="areap1"> Aluno do IFRN</label> 
+                                    <b><label class= "b8" for="areap1"> Aluno do IFRN</label>
 				</div>
 				<div>
 					<label class= "b9" for=”turma”> Turmas 2013</label>

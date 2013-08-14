@@ -10,57 +10,49 @@ and open the template in the editor.
     </head>
     <body>
 <?php
-        if($_POST[ 'act' ]=="gravar") {
-
-$conn = mysql_connect("localhost","root","");
-
-$banco = mysql_select_db("login");
-$nomepost = addslashes($_POST['nome']);
-$ussernamepost = addslashes($_POST['ussername']);
-$emailpost = addslashes($_POST['email']);
-$nomepost = addslashes($_POST['matricula']);
-$senhapost = addslashes($_POST['senha']);
-$senhapost2 = addslashes($_POST['senha2']);
-
-if(empty($nomepost) || empty($ussernamepost) || empty($senhapost) || empty($emailpost)){
-echo "Voce esqueceu algum campo em branco";
-exit();
-}
-if($senha != $senha2){
-echo "Senhas nao conferem";
-exit();
-}
-if(filter_var($emailpost, FILTER_VALIDATE_EMAIL)){
-
-  mysql_query("INSERT INTO Sis_login (id, nome, ussername, senha, email)
-  VALUES (NULL, '$nomepost', '$ussernamepost', '$senhapost', '$emailpost')");
-  print "<center>Usuário criado com sucesso!</center>";
-}else{
-echo "Email invalido";
-}
-} else {
-?>
-
-<form name="newuser" method="post" action="?act=gravar">
-
-Nome: <input type="text" name="nome" maxlength=40><BR>
-Usser Name: <input type="text" name="ussername" maxlength=20><BR>
-Email: <input type="text" name="email" ><BR>
-Senha: <input type="password" name="senha" maxlength=20>
-<br>
-Repita: 
-<input type="password" name="senha2" maxlength=20>
-<BR>
-<BR>
-
-<input type="submit" value="Enviar!">
-
-</form>
-        
+// Obtemos os dados do formulário
+     if(isset($_POST) && !empty($_POST)) {
+       $nome      = $_POST["nome"];//aqui pega os dados que foram preenchidos la no formulário com o ID nome.
+       $sobrenome = $_POST["sobrenome"];//aqui pega os dados que foram preenchidos la no formulário com o ID sobrenome.
+       $email     = $_POST["email"];//aqui pega os dados que foram preenchidos la no formulário com o ID email.
+       $Matricula = $_POST["Matricula"];;//aqui pega os dados que foram preenchidos la no formulário com o ID matricula.
+       $Senha     = $_POST["Senha"];;//aqui pega os dados que foram preenchidos la no formulário com o ID senha.
+       $repetir_Senha = $_POST["repetir_Senha"];;//aqui pega os dados que foram preenchidos la no formulário com o ID repetir_senha.
+       $erro = 0;
+       
+       if (ereg ("([a-z]{5}))", $nome,$var)) {
+        echo "Digitar nome corretamente.<br>";
+       } else {
+          echo "Formato do nome inválido: $nome";
+       }
+              
+       if(strlen($sobrenome)<5)
+       {echo "o nome deve possuir no minimo 5 caracteres.<br>";$erro=1;}
+       
+       if(strlen($email)<8 || strstr($email,'@')==FALSE)
+       {echo "Por favor digitar um email valido.<br>";$erro=1;}
+       
+       if(strlen($Matricula)<11)
+       {echo "A matricula deve possuir no minimo 11 caracteres.<br>";$erro=1;}
+       
+       if(strlen($Senha)<6)
+       {echo "A senha deve possuir no minimo 6 caracteres.<br>";$erro=1;}
+       
+       if(strlen($repetir_Senha)<6)
+       {echo "A senha deve ser igual.<br>";$erro=1;}
+       
+       //verifica se todos os campos foram digitados corretamente
+       
+       if($erro==0)
+       {echo "todos os dados foram digitados corretamente!";}
+       
+     }
+       
+       ?>
 
 <?
 
-}
+
 
 ?>
   
