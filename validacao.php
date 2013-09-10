@@ -20,7 +20,7 @@ and open the template in the editor.
        $repetir_Senha = $_POST["repetir_Senha"];;//aqui pega os dados que foram preenchidos la no formulário com o ID repetir_senha.
        $erro = 0;
        
-       if (ereg ("([a-z]{5}))", $nome,$var)) {
+       if (ereg ("([a-z]<5))", $nome,$var)) {
         echo "Digitar nome corretamente.<br>";
        } else {
           echo "Formato do nome inválido: $nome";
