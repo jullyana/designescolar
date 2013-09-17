@@ -12,12 +12,13 @@
  */
 class Aluno {
     //put your code here
-    public $nome;
-    public $sobrenome;
-    public $email;
-    public $matricula;
-    public $senha;
-    public $turmas_nome;
+    private $nome;
+    private $sobrenome;
+    private $email;
+    private $matricula;
+    private $senha;
+    private $turmas_nome;
+    private $comentario;
     
     /** Construtor serve para instanciar um objeto.*/
     function __construct($nome, $sobrenome, $email, $matricula, $senha, $turmas_nome) {
