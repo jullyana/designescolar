@@ -12,23 +12,23 @@
  */
 class AlunoControl {
     //put your code here
-     function cadastroAluno($prazo, $nucleo_nome){
+     function cadastroAluno($matricula,$senha){
         //1 - obter informações do banco de dados
-        $dao = new LiderDao();
+        $dao = new AlunoDao();
         $id = $dao.getIdLivre();
         
         //2 - validação dos dados fornecidos pelo usuário.
-        if(validarPrazo($prazo)==False){
-            header("Location: ../../erros/erroCadastroLider.php");
+        if(validarSenha($matricula)==False){
+            header("Location: ../../erros/erroCadastroAluno.php");
         }
         //3 - criar um objeto do Lider.
-        $lider = new Lider($id,$prazo,$nucleo);
+        $aluno = new Aluno($nome,$matricula,$nucleo);
         
         //4 - executar o método de inserção.
-        $dao->insertLider($lider);
+        $dao->insertAluno($aluno);
     }
     
-    function validarPrazo($prazo){
+    function validarMatricula($matricula){
         //TODO - ...
         return True;
     }
