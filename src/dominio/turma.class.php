@@ -13,26 +13,19 @@
  */
 class Turma {
     //put your code here
-    public $nome;
-    public $codigos;
+    public $codigo;
     public $periodo;
     public $turno;
     
     /** Construtor serve para instanciar um objeto.*/
-    function __construct($nome, $codigos, $periodo, $turno) {
-        $this->nome = $nome;
+    function __construct($codigos, $periodo, $turno) {
+     
         $this->codigos = $codigos;
         $this->periodo = $periodo;
         $this->turno = $turno;
        
     }
-    public function getNome() {
-        return $this->nome;
-    }
 
-    public function setNome($nome) {
-        $this->nome = $nome;
-    }
 
     public function getCodigos() {
         return $this->codigos;

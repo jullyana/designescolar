@@ -13,14 +13,12 @@
 class Diciplina {
     //put your code here
    public $nome;
-   public $ementa;
    public $carga_horaria;
    public $turmas_nome;
    
     /** Construtor serve para instanciar um objeto.*/
-   function __construct($nome, $ementa, $carga_horaria, $turmas_nome) {
+   function __construct($nome,$carga_horaria, $turmas_nome) {
        $this->nome = $nome;
-       $this->ementa = $ementa;
        $this->carga_horaria = $carga_horaria;
        $this->turmas_nome = $turmas_nome;
    }

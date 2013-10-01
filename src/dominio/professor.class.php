@@ -13,20 +13,18 @@
 class Professor {
     //put your code here
     public $nome;
-    public $sobrenome;
-    public $e_mail;
+    public $disciplina;
+    public $email;
     public $matricula;
     public $senha;
-    public $turmas_nome;
     
      /** Construtor serve para instanciar um objeto.*/
-    function __construct($nome, $sobrenome, $e_mail, $matricula, $senha, $turmas_nome) {
+    function __construct($nome, $disciplina, $email, $matricula, $senha) {
         $this->nome = $nome;
-        $this->sobrenome = $sobrenome;
-        $this->e_mail = $e_mail;
+        $this->disciplina = $sobrenome;
+        $this->email = $email;
         $this->matricula = $matricula;
         $this->senha = $senha;
-        $this->turmas_nome = $turmas_nome;
     }
     public function getNome() {
         return $this->nome;
@@ -36,20 +34,20 @@ class Professor {
         $this->nome = $nome;
     }
 
-    public function getSobrenome() {
+    public function getDisciplina() {
         return $this->sobrenome;
     }
 
-    public function setSobrenome($sobrenome) {
+    public function setDisciplina($sobrenome) {
         $this->sobrenome = $sobrenome;
     }
 
-    public function getE_mail() {
-        return $this->e_mail;
+    public function getEmail() {
+        return $this->email;
     }
 
-    public function setE_mail($e_mail) {
-        $this->e_mail = $e_mail;
+    public function setEmail($e_mail) {
+        $this->e_mail = $email;
     }
 
     public function getMatricula() {
@@ -67,16 +65,9 @@ class Professor {
     public function setSenha($senha) {
         $this->senha = $senha;
     }
-
-    public function getTurmas_nome() {
-        return $this->turmas_nome;
-    }
-
-    public function setTurmas_nome($turmas_nome) {
-        $this->turmas_nome = $turmas_nome;
+    
     }
 
 
-}
 
 ?>
